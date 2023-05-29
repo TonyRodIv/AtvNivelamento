@@ -7,17 +7,17 @@ const data = [
     {
         "category": "Memory",
         "score": 92,
-        "icon": "../assets/images/icon-memory.svg"
+        "icon": "./assets/images/icon-memory.svg"
     },
     {
         "category": "Verbal",
         "score": 61,
-        "icon": "../assets/images/icon-verbal.svg"
+        "icon": "./assets/images/icon-verbal.svg"
     },
     {
         "category": "Visual",
         "score": 72,
-        "icon": "../assets/images/icon-visual.svg"
+        "icon": "./assets/images/icon-visual.svg"
     }
 ]
 let write = document.getElementById('writeSummary')
