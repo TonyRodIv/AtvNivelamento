@@ -28,6 +28,10 @@ main {
     grid-template-rows: 1fr;
 }
 
+button {
+    cursor: pointer;
+}
+
 p {
     text-align: center;
 }
@@ -101,49 +105,123 @@ p {
 }
 
 /* SUMMARY */
-.icon{
-    width: 30px;
-}
-.summaryResult{
+.summary {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
 }
+
+.summary .title {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.summaryResult {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
 .summaryCards {
-    width: 288px;
-    /* width: 80%; */
+    max-width: 288px;
+    width: 80%;
     height: 55px;
     background: #D9D9D9;
     border-radius: 10px;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
 }
-.nameIcon{
+
+.nameIcon {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-#Reaction{
+.nameIcon p {
+    width: 62px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.percent {
+    color: #040938;
+    font-weight: bold;
+}
+
+.percentLight {
+    color: #0409387c;
+}
+
+#Reaction {
     background-color: hsla(0, 100%, 67%, 0.2);
     color: hsl(0, 100%, 67%);
-    }
-    
-    #Memory{
+}
+
+#Memory {
     background-color: hsl(39, 100%, 56%, 0.2);
     color: hsl(39, 100%, 56%);
-    }
-    
-    #Verbal{
+}
+
+#Verbal {
     background-color: hsl(166, 100%, 37%, 0.2);
     color: hsl(166, 100%, 37%);
+}
+
+#Visual {
+    background-color: hsl(234, 85%, 45%, 0.2);
+    color: hsl(234, 85%, 45%);
+}
+
+.continueBtn {
+    max-width: 290px;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #303B59;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.continueBtn:hover {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+
+@media screen and (max-width: 680px) {
+    body{
+        justify-content: start;
     }
-    
-    #Visual{
-     background-color: hsl(234, 85%, 45%, 0.2); 
-     color: hsl(234, 85%, 45%);  
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr;
+        box-shadow: none;
+        width: 100%;
+        height: 100vh;
     }
+    .yourResult{
+        border-radius: 0px 0px 32px 32px;
+    }
+    .summaryCards{
+        max-width: 372px;
+    }
+}
