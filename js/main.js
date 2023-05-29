@@ -24,7 +24,7 @@ let write = document.getElementById('writeSummary')
 let i = 0
 for (i; i < data.length; i++) {
     write.innerHTML += `
-    <div id="reaction" class="summaryCards">
+    <div id="${data[i].category}" class="summaryCards">
     <div class="nameIcon">
       <img src="${data[i].icon}" class="icon">
       <p>${data[i].category}</p>

@@ -104,6 +104,11 @@ p {
 .icon{
     width: 30px;
 }
+.summaryResult{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .summaryCards {
     width: 288px;
     /* width: 80%; */
@@ -122,3 +127,23 @@ p {
     align-items: center;
     gap: 10px;
 }
+
+#Reaction{
+    background-color: hsla(0, 100%, 67%, 0.2);
+    color: hsl(0, 100%, 67%);
+    }
+    
+    #Memory{
+    background-color: hsl(39, 100%, 56%, 0.2);
+    color: hsl(39, 100%, 56%);
+    }
+    
+    #Verbal{
+    background-color: hsl(166, 100%, 37%, 0.2);
+    color: hsl(166, 100%, 37%);
+    }
+    
+    #Visual{
+     background-color: hsl(234, 85%, 45%, 0.2); 
+     color: hsl(234, 85%, 45%);  
+    }
